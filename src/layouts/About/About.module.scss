@@ -1,39 +1,140 @@
 .about {
-	@apply h-full flex flex-col md:flex-row justify-center items-start relative mt-[20vw];
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	margin-top: 20vw;
+
+	@media (min-width: 768px) {
+		flex-direction: row;
+	}
 }
 
 .about_me {
-	@apply mb-2 md:mb-0 relative md:sticky md:top-[36%] lg:w-[150px] md:w-[130px] sm:w-[130px] flex flex-row items-start;
+	margin-bottom: 0.5rem;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+
+	@media (min-width: 768px) {
+		margin-bottom: 0;
+		position: sticky;
+		top: 36%;
+		width: 130px;
+	}
+
+	@media (min-width: 1024px) {
+		width: 150px;
+	}
 }
 
 .about_me span {
-	@apply text-left font-slussen_compressed_black uppercase text-[15vw] md:text-[8vw] lg:text-[10vw] tracking-[-0.1vw] leading-[9vw] md:leading-[7vw] lg:leading-[8vw];
+	text-align: left;
+	font-family: var(--font-slussen-compressed-black);
+	text-transform: uppercase;
+	font-size: 15vw;
+	letter-spacing: -0.1vw;
+	line-height: 9vw;
+
+	@media (min-width: 768px) {
+		font-size: 8vw;
+		line-height: 7vw;
+	}
+
+	@media (min-width: 1024px) {
+		font-size: 10vw;
+		line-height: 8vw;
+	}
 }
 
 .border {
-	@apply hidden md:block w-[5px] h-[100%] bg-blue absolute top-0 md:right-[8.7rem] lg:right-[10rem];
+	display: none;
+
+	@media (min-width: 768px) {
+		display: block;
+		width: 5px;
+		height: 100%;
+		background-color: var(--blue);
+		position: absolute;
+		top: 0;
+		right: 8.7rem;
+	}
+
+	@media (min-width: 1024px) {
+		right: 10rem;
+	}
 }
 
 .texts {
-	@apply ml-0 md:ml-[25vw] mt-[2vw] md:mt-[10vw];
+	margin-left: 0;
+	margin-top: 2vw;
+
+	@media (min-width: 768px) {
+		margin-left: 25vw;
+		margin-top: 10vw;
+	}
 }
 
 .text {
-	@apply my-[50vw] lg:my-[30vw];
+	margin-top: 50vw;
+	margin-bottom: 50vw;
+
+	@media (min-width: 1024px) {
+		margin-top: 30vw;
+		margin-bottom: 30vw;
+	}
 }
 
 .text:nth-child(1) {
-	@apply mt-0;
+	margin-top: 0;
 }
 
 .text:last-child {
-	@apply mb-0;
+	margin-bottom: 0;
 }
 
 .text h3 {
-	@apply w-full md:w-[45vw] lg:w-[25vw] text-left text-[8vw] md:text-[3.4vw] lg:text-[2vw] leading-[7vw] md:leading-[2.8vw] lg:leading-[1.9vw] font-slussen_expended_black uppercase text-blue;
+	width: 100%;
+	text-align: left;
+	font-size: 8vw;
+	line-height: 7vw;
+	font-family: var(--font-slussen-expended-black);
+	text-transform: uppercase;
+	color: var(--blue);
+
+	@media (min-width: 768px) {
+		width: 45vw;
+		font-size: 3.4vw;
+		line-height: 2.8vw;
+	}
+
+	@media (min-width: 1024px) {
+		width: 25vw;
+		font-size: 2vw;
+		line-height: 1.9vw;
+	}
 }
 
 .text p {
-	@apply mt-3 md:mt-5 w-full lg:w-[30vw] text-left font-slussen_medium text-[4vw] md:text-[2vw] lg:text-[1.3vw] leading-[4.8vw] md:leading-[2.5vw] lg:leading-[1.5vw];
+	margin-top: 0.75rem;
+	width: 100%;
+	text-align: left;
+	font-family: var(--font-slussen-medium);
+	font-size: 4vw;
+	line-height: 4.8vw;
+
+	@media (min-width: 768px) {
+		margin-top: 1.25rem;
+		font-size: 2vw;
+		line-height: 2.5vw;
+	}
+
+	@media (min-width: 1024px) {
+		width: 30vw;
+		font-size: 1.3vw;
+		line-height: 1.5vw;
+	}
 }

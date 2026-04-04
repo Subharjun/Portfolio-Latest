@@ -1,7 +1,15 @@
 .contact {
-	@apply h-[300vh] w-full flex justify-center items-center;
+	height: 300vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .contact span {
-	@apply flex justify-center sticky top-[45%] bg-white;
+	display: flex;
+	justify-content: center;
+	position: sticky;
+	top: 45%;
+	background-color: var(--white);
 }
