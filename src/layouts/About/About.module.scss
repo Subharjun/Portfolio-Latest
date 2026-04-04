@@ -99,8 +99,8 @@
 .text h3 {
 	width: 100%;
 	text-align: left;
-	font-size: 8vw;
-	line-height: 7vw;
+	font-size: 8vw; // Keep large but controlled for mobile
+	line-height: normal;
 	font-family: var(--font-slussen-expended-black);
 	text-transform: uppercase;
 	color: var(--blue);
@@ -119,12 +119,12 @@
 }
 
 .text p {
-	margin-top: 0.75rem;
+	margin-top: 0.5rem;
 	width: 100%;
 	text-align: left;
 	font-family: var(--font-slussen-medium);
-	font-size: 4vw;
-	line-height: 4.8vw;
+	font-size: 4.5vw; // Slightly larger for readability on small screens
+	line-height: 1.4;
 
 	@media (min-width: 768px) {
 		margin-top: 1.25rem;

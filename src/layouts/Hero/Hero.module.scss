@@ -4,28 +4,40 @@
 	justify-content: space-between;
 	align-items: flex-start;
 	height: 100vh;
+	padding-top: 2rem; // Added to prevent notch clipping
+
+	@media (max-width: 768px) {
+		padding-top: 5rem; // More room on mobile
+	}
 }
 
 .main_text {
 	font-family: var(--font-germanica);
 	text-align: center;
-	font-size: 23vw;
-	line-height: 24vw;
+	font-size: 18vw; // Reduced from 23vw for mobile
+	line-height: normal;
 	color: var(--blue);
-	letter-spacing: 1vw;
+	letter-spacing: 0.5vw;
 	text-transform: capitalize;
+
+	@media (min-width: 768px) {
+		font-size: 23vw;
+		line-height: 24vw;
+		letter-spacing: 1vw;
+	}
 }
 
 .sub_text {
 	font-family: var(--font-slussen-expended-black);
 	text-transform: uppercase;
-	font-size: 9vw;
-	margin-top: 0.75rem;
+	font-size: 7vw; // Reduced from 9vw
+	margin-top: 0.5rem;
 	line-height: 1;
 	letter-spacing: -0.01em;
 
 	@media (min-width: 768px) {
 		font-size: 4.5vw;
+		margin-top: 0.75rem;
 	}
 }
 

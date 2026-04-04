@@ -1,6 +1,10 @@
 .projects {
 	margin-top: 52vw;
 	overflow: visible;
+
+	@media (min-width: 768px) {
+		margin-top: 30vw;
+	}
 }
 
 .title {
@@ -13,47 +17,70 @@
 	text-align: left;
 	font-family: var(--font-slussen-compressed-black);
 	text-transform: uppercase;
-	font-size: 8vw;
+	font-size: 10vw; // Slightly larger for mobile visibility
 	letter-spacing: -0.1vw;
-	line-height: 8vw;
+	line-height: 1;
+
+	@media (min-width: 768px) {
+		font-size: 8vw;
+		line-height: 8vw;
+	}
 }
 
 .container {
 	position: relative;
 	width: 100%;
 	margin-top: 5vw;
-	padding-left: 5vw;
-	padding-right: 5vw;
 	overflow: visible;
 }
 
 .horizontal_scroll_container {
 	display: flex;
-	gap: 5vw;
+	gap: 1.5rem;
 	overflow-x: auto;
 	overflow-y: visible;
 	padding-bottom: 2.5rem;
 	padding-top: 1.25rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
 	-webkit-overflow-scrolling: touch;
+	scroll-padding: 0 1.5rem;
+	scrollbar-width: thin;
+	scrollbar-color: var(--blue) transparent;
 
 	&::-webkit-scrollbar {
-		height: 8px;
+		height: 4px;
 	}
 
 	&::-webkit-scrollbar-track {
 		background: rgba(255, 255, 255, 0.05);
-		border-radius: 10px;
 	}
 
 	&::-webkit-scrollbar-thumb {
-		background: #3b82f6;
+		background: var(--blue);
 		border-radius: 10px;
+	}
+
+	@media (min-width: 768px) {
+		gap: 5vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+		scroll-padding: 0 5vw;
 	}
 }
 
 .project_wrapper {
 	flex-shrink: 0;
+	flex-basis: 85vw;
 	scroll-snap-align: center;
+
+	@media (min-width: 768px) {
+		flex-basis: 75vw;
+	}
+
+	@media (min-width: 1024px) {
+		flex-basis: 60vw;
+	}
 }

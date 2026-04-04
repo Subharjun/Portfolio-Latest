@@ -30,8 +30,8 @@ export default function Hero() {
 	return (
 		<section className={styles.hero}>
 			<div className={styles.top}>
-				<h1 className={styles.main_text}>Bose</h1>
-				<h3 className={styles.sub_text}>Subharjun</h3>
+				<h1 className={styles.main_text}>Subharjun</h1>
+				<h3 className={styles.sub_text}>Bose</h3>
 				<p className={styles.text}>Aspiring Software Engineer</p>
 			</div>
 
