@@ -1,9 +1,7 @@
 'use client'
 
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion'
 import { Project } from '@/components/Project/Project'
 import styles from './Projects.module.scss'
-import { MouseEvent, useRef, useState } from 'react'
 import { projects } from './Projects.data'
 
 export default function Projects() {
