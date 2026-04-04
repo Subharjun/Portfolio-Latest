@@ -47,9 +47,9 @@ const slussenBold = localFont({
 })
 
 export const metadata: Metadata = {
-	title: 'Samadov J. - Software Engineer',
+	title: 'Subharjun Bose | Aspiring Software Engineer',
 	description:
-		'A full-stack developer with 4 years of experience turning ideas into user-friendly applications. I focus on writing clean code, building responsive UIs, and ensuring strong server-side performance',
+		'Aspiring Software Engineer & AI Enthusiast building the future with clean code and high-performance 3D interactions.',
 }
 
 export default function RootLayout({
