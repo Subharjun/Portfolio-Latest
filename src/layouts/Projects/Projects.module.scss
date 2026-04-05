@@ -36,7 +36,7 @@
 
 .horizontal_scroll_container {
 	display: flex;
-	gap: 1rem;
+	gap: 1.5rem;
 	overflow-x: auto;
 	overflow-y: visible;
 	padding-bottom: 2.5rem;
@@ -64,7 +64,7 @@
 	}
 
 	@media (min-width: 768px) {
-		gap: 1.25rem;
+		gap: 3vw;
 		padding-left: 5vw;
 		padding-right: 5vw;
 		scroll-padding: 0 5vw;
