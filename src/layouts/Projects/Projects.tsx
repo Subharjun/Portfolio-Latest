@@ -11,7 +11,10 @@ export default function Projects() {
 				<h1>Projects</h1>
 			</div>
 			<div className={styles.container}>
-				<div className={styles.horizontal_scroll_container}>
+				<div
+					className={styles.horizontal_scroll_container}
+					data-lenis-prevent
+				>
 					{projects.map(({ id, title, description, img, link }) => {
 						return (
 							<div key={id} className={styles.project_wrapper}>
