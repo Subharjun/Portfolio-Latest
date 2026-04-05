@@ -2,12 +2,14 @@
 	position: fixed;
 	height: 100%;
 	z-index: -12;
+	pointer-events: none;
 }
 
 .particles {
 	position: fixed;
 	height: 100%;
 	z-index: -11;
+	pointer-events: none;
 }
 
 .stars {
