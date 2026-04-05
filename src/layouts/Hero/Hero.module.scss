@@ -21,7 +21,7 @@
 	text-transform: capitalize;
 
 	@media (min-width: 768px) {
-		font-size: clamp(8vw, 15vw, 20vw);
+		font-size: clamp(8vw, 12.5vw, 15vw);
 		line-height: 1.1;
 		letter-spacing: 0.8vw;
 	}

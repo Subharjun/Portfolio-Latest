@@ -73,14 +73,14 @@
 
 .project_wrapper {
 	flex-shrink: 0;
-	flex-basis: 85vw;
-	scroll-snap-align: center;
+	flex-basis: 400px;
+	scroll-snap-align: start;
 
 	@media (min-width: 768px) {
-		flex-basis: 75vw;
+		flex-basis: 400px;
 	}
 
 	@media (min-width: 1024px) {
-		flex-basis: 45vw;
+		flex-basis: 400px;
 	}
 }
