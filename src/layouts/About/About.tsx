@@ -32,21 +32,16 @@ export default function About() {
 					</p>
 				</div>
 				<div className={styles.text}>
-					<h3>Building the Future with Automation & AI</h3>
+					<h3>Building the Future with Agentic AI & Automation</h3>
 					<p>
-						With hands-on experience in the MERN stack from my internship at
-						Codesoft and active contributions in AI automation communities, I
-						strive to create clean, efficient code. I’ve worked on projects
-						ranging from real-time driver wellness monitors to Windows
-						automation kernels using LLMs.
+						As a leader in the <strong>UiPath Community (Kolkata)</strong> and a finalist at <strong>Hack4Bengal 4.0</strong>, I specialize in building <strong>Agentic AI systems</strong> like AutomatOS and real-time vision tools like SafeDrive AI.
 					</p>
 				</div>
 				<div className={styles.text}>
 					<p>
 						I am passionate about learning new technologies and staying at the
-						forefront of innovation, whether it’s through participating in
-						hackathons (like Hack4Bengal and InnoFusion) or building scalable
-						web applications with Next.js and Three.js.
+						forefront of innovation, whether it’s through bridging natural language to system-level execution or building scalable,
+						interactive web applications with Next.js and Three.js.
 					</p>
 				</div>
 			</div>
